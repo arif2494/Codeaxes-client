@@ -20,13 +20,14 @@ const User = ({ user }) => {
 		<div className="bg-blue-500 p-4 rounded-xl text-white">
 			<div className="flex flex-col items-center">
 				<div className="flex">
+					<p className="mr-1 text-2xl">Name: </p>
 					<p className="mr-1 text-2xl">{firstName} </p>
 					<p className=" text-2xl">{lastName}</p>
 				</div>
-				<p className=" text-xl">{birthDay}</p>
-				<p className=" text-xl">{email}</p>
-				<p className=" text-xl">{address}</p>
-				<p className=" text-xl">{contactNumber}</p>
+				<p className=" text-xl">Birthday: {birthDay}</p>
+				<p className=" text-xl">Email: {email}</p>
+				<p className=" text-xl">Address: {address}</p>
+				<p className=" text-xl">Number: {contactNumber}</p>
 				<button className="bg-white py-2 mt-2 px-4 text-black rounded" onClick={() => deleteUser(_id)}>
 					Delete This user
 				</button>
