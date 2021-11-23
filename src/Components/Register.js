@@ -17,7 +17,12 @@ const Register = () => {
 			body: JSON.stringify(user)
 		})
 			.then((res) => res.json())
-			.then((data) => console.log(data));
+			.then((data) => {
+				if (data.insertedId) {
+					alert('User added successfully');
+					window.location.reload();
+				}
+			});
 	};
 	return (
 		<div>
